@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abishake — Computer Science Capstone ePortfolio</title>
+<meta name="description" content="CS 499 Capstone ePortfolio — Travlr Getaways enhancement project">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Build log rail (signature element) -->
+  <div class="build-log" aria-hidden="true">
+    <div class="build-log__line"></div>
+    <ul class="build-log__entries">
+      <li data-target="assessment"><span class="build-log__ts">00</span>Self-assessment</li>
+      <li data-target="review"><span class="build-log__ts">01</span>Code review</li>
+      <li data-target="design"><span class="build-log__ts">02</span>Design &amp; engineering</li>
+      <li data-target="algorithms"><span class="build-log__ts">03</span>Algorithms &amp; data</li>
+      <li data-target="databases"><span class="build-log__ts">04</span>Databases</li>
+      <li data-target="contact"><span class="build-log__ts">05</span>Contact</li>
+    </ul>
+  </div>
+
+  <!-- Mobile top bar -->
+  <header class="topbar">
+    <span class="topbar__name">Abishake</span>
+    <button class="topbar__toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#assessment">Self-assessment</a>
+    <a href="#review">Code review</a>
+    <a href="#design">Design &amp; engineering</a>
+    <a href="#algorithms">Algorithms &amp; data</a>
+    <a href="#databases">Databases</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__eyebrow">CS 499 · Computer Science Capstone · Southern New Hampshire University</div>
+      <h1 class="hero__title">Travlr Getaways<br><span class="hero__title-sub">rebuilt, enhanced, documented.</span></h1>
+      <p class="hero__lede">
+        A MEAN-stack trip booking platform, taken from a course project to a production-shaped
+        application: a standalone Angular admin SPA, client-side search and sort across trip data,
+        and a MongoDB reviews layer with an aggregation pipeline. This portfolio walks through
+        what changed, why, and what it proves.
+      </p>
+      <div class="hero__meta">
+        <span>MongoDB</span><span>Express</span><span>Angular 19</span><span>Node.js</span>
+      </div>
+    </section>
+
+    <!-- SELF ASSESSMENT -->
+    <section class="block" id="assessment">
+      <div class="block__label">00 — Self-Assessment</div>
+      <h2 class="block__title">Professional Self-Assessment</h2>
+      <div class="prose">
+        <p>
+          Completing the Computer Science program at Southern New Hampshire University has been
+          a steady process of turning classroom concepts into work I can actually stand behind.
+          The capstone pulled that process into focus. Building and enhancing the Travlr Getaways
+          application forced me to look back at code I wrote early in the program and ask a harder
+          question than &ldquo;does it work?&rdquo; I had to ask &ldquo;would I be comfortable
+          putting my name on this in front of an employer?&rdquo; That question shaped every
+          decision in this ePortfolio, and it shaped how I think about my own growth as a developer.
+        </p>
+
+        <h3 class="prose__subhead">Collaborating in a team environment</h3>
+        <p>
+          My strongest experience working as part of a team came from my role as a Software
+          Developer Intern at Godman Guild Association. I worked alongside technical staff and
+          non-technical staff who depended on the systems I was testing and documenting. I ran
+          functional testing on internal systems, tracked down the root cause of hardware and
+          workstation issues, and documented every step so the next person, technical or not,
+          could follow what I did and why. That role taught me that good collaboration is not
+          just writing code other developers can read. It is writing documentation and explanations
+          that a non-technical coworker can use without needing to call you first. I carried that
+          same instinct into the capstone, where my code comments and the code review walkthrough
+          were written with a mixed audience in mind, not just other engineers.
+        </p>
+
+        <h3 class="prose__subhead">Communicating with stakeholders</h3>
+        <p>
+          Throughout the program, I learned that a technical decision is only as good as your
+          ability to explain it to someone who was not in the room when you made it. In CS 255,
+          System Analysis and Design, I built a full set of UML diagrams for a fictional client,
+          DriverPass, and then presented that design directly to a stakeholder audience. That
+          experience is where I first had to translate a system I understood completely in my
+          head into language and visuals that someone outside the project could follow. The
+          capstone built on that skill directly. Each enhancement narrative in this ePortfolio
+          explains not just what changed in the Travlr Getaways code, but why the change mattered,
+          written so a hiring manager without a development background could still follow the
+          reasoning.
+        </p>
+
+        <h3 class="prose__subhead">Data structures and algorithms</h3>
+        <p>
+          CS 260, Data Structures and Algorithms, gave me the foundation for thinking about
+          efficiency before I write a single line of code, not after. That foundation showed up
+          directly in my capstone enhancement to the Travlr Getaways trip listings. The original
+          version had no way for a user to narrow down results. I added client-side search,
+          filtering, and sorting, and I had to think through the time complexity of each approach
+          before choosing one, since the goal was a fast, responsive interface without adding a
+          server round trip for every interaction. I also worked through reinforcement learning
+          algorithms in CS 370, including a deep Q-learning model for a pathfinding problem, which
+          pushed my comfort with algorithmic thinking well past basic sorting and searching into
+          more adaptive, decision-driven logic.
+        </p>
+
+        <h3 class="prose__subhead">Software engineering and databases</h3>
+        <p>
+          My software engineering skills grew the most through hands-on rebuilding rather than
+          theory alone. In CS 465, Full Stack Development, I built Travlr Getaways from the ground
+          up as a MEAN stack application. For the capstone, I went back into that same codebase
+          and rebuilt the admin interface using Angular 19 standalone components, replacing an
+          older module-based structure with one that is easier to maintain and extend. On the
+          database side, I designed and added an embedded reviews system in MongoDB, including an
+          aggregation pipeline to calculate and surface average ratings per trip. That enhancement
+          took me from simply using a database to actually designing how data should be modeled
+          and queried for a real feature, not just stored.
+        </p>
+
+        <h3 class="prose__subhead">Security</h3>
+        <p>
+          Security became something I think about by default rather than something I bolt on at
+          the end. In CS 305, Software Security, I implemented SSL and SHA-256 hashing in a Spring
+          Boot application and ran OWASP dependency checks to catch known vulnerabilities before
+          they became real problems. That mindset carried directly into the capstone. The Travlr
+          Getaways authentication system uses JWT tokens with bcrypt password hashing, and every
+          new endpoint I added during the database enhancement includes input validation at
+          multiple layers, not just at the form level. I see security as a design requirement that
+          belongs in the first draft of a system, not a patch applied after something goes wrong.
+        </p>
+
+        <h3 class="prose__subhead">How the artifacts fit together</h3>
+        <p>
+          This ePortfolio uses a single artifact, Travlr Getaways, enhanced across all three
+          required categories. I chose that approach on purpose. Rather than show three
+          disconnected projects, I wanted to show how one real application can grow when it is
+          approached with a software design mindset, an algorithms mindset, and a data mindset,
+          one after another, the same way a real production system actually evolves over time.
+          The Software Design and Engineering enhancement modernized the application&rsquo;s
+          structure and authentication. The Algorithms and Data Structures enhancement made the
+          application faster and more usable for an end user. The Databases enhancement gave the
+          application a feature, reviews and ratings, that did not exist before and that depended
+          on querying and modeling data correctly. Together, the three enhancements tell one
+          continuous story about taking an existing system and making deliberate, defensible
+          improvements to it, which is the same work I expect to be doing as a software engineer.
+        </p>
+
+        <p>
+          The sections that follow walk through each enhancement in detail, alongside the original
+          code, the enhanced code, and the reasoning behind each change.
+        </p>
+      </div>
+    </section>
+
+    <!-- CODE REVIEW -->
+    <section class="block block--alt" id="review">
+      <div class="block__label">01 — Code Review</div>
+      <h2 class="block__title">Code Review Walkthrough</h2>
+      <p class="block__intro">
+        A screencast covering the original Travlr Getaways codebase: existing functionality,
+        a code analysis of structure, security, and testing gaps, and the planned enhancements
+        mapped to course outcomes.
+      </p>
+      <div class="video-frame placeholder-content">
+        <div class="video-frame__inner">
+          <a href="#" class="btn btn--ghost" id="videoLink">Watch on YouTube →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESIGN & ENGINEERING -->
+    <section class="block" id="design">
+      <div class="block__label">02 — Software Design &amp; Engineering</div>
+      <h2 class="block__title">Angular Standalone SPA Migration</h2>
+      <div class="artifact">
+        <div class="artifact__col">
+          <h3>What it was</h3>
+          <p class="prose">
+            The original CS 465 build used an NgModule-based Angular admin panel with tightly
+            coupled trip components and no clear separation between presentational and
+            container logic.
+          </p>
+        </div>
+        <div class="artifact__col">
+          <h3>What changed</h3>
+          <p class="prose">
+            Migrated to Angular 19 standalone components, restructured the admin panel into
+            trip-card, trip-detail, and trip-listing components, and implemented JWT
+            authentication with bcrypt password hashing across the API layer.
+          </p>
+        </div>
+      </div>
+      <div class="artifact-links">
+        <a href="https://github.com/Abishake-5/travlr-getaways" target="_blank" rel="noopener">Enhanced source →</a>
+        <a href="./CS499MilestoneTwo.docx" >Narrative →</a>
+      </div>
+    </section>
+
+    <!-- ALGORITHMS & DATA -->
+    <section class="block block--alt" id="algorithms">
+      <div class="block__label">03 — Algorithms &amp; Data Structures</div>
+      <h2 class="block__title">Client-Side Search, Filter &amp; Sort</h2>
+      <div class="artifact">
+        <div class="artifact__col">
+          <h3>What it was</h3>
+          <p class="prose">
+            Trip listings rendered as a static, unfiltered array with no way for a user to
+            narrow results beyond scrolling the full list.
+          </p>
+        </div>
+        <div class="artifact__col">
+          <h3>What changed</h3>
+          <p class="prose">
+            Added in-memory search, multi-field filtering, and comparator-based sorting over
+            the trip data structure, evaluated for time complexity against dataset size to
+            keep interactions responsive without a server round-trip.
+          </p>
+        </div>
+      </div>
+      <div class="artifact-links">
+        <a href="https://github.com/Abishake-5/travlr-getaways" target="_blank" rel="noopener">Enhanced source →</a>
+        <a href="./CS499MilestoneThree.docx.docx" >Narrative →</a>
+      </div>
+    </section>
+
+    <!-- DATABASES -->
+    <section class="block" id="databases">
+      <div class="block__label">04 — Databases</div>
+      <h2 class="block__title">MongoDB Reviews &amp; Aggregation Pipeline</h2>
+      <div class="artifact">
+        <div class="artifact__col">
+          <h3>What it was</h3>
+          <p class="prose">
+            Trips had no review or rating system — no schema, no endpoints, no way to surface
+            customer feedback alongside a trip listing.
+          </p>
+        </div>
+        <div class="artifact__col">
+          <h3>What changed</h3>
+          <p class="prose">
+            Designed an embedded reviews subdocument schema in MongoDB, built CRUD endpoints
+            for review submission, and wrote an aggregation pipeline to compute and surface
+            average ratings per trip.
+          </p>
+        </div>
+      </div>
+      <div class="artifact-links">
+        <a href="https://github.com/Abishake-5/travlr-getaways" target="_blank" rel="noopener">Enhanced source →</a>
+        <a href="./CS499MilestoneFour.docx" >Narrative  →</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="block block--contact" id="contact">
+      <div class="block__label">05 — Contact</div>
+      <h2 class="block__title">Let's talk.</h2>
+      <p class="block__intro">
+        Computer Science, B.S. — Software Engineering concentration. Columbus, Ohio.
+      </p>
+      <div class="contact-links">
+        <a href="./AbishakeShanker_Resume.pdf" >Resume (PDF) →</a>
+        <a href="https://www.linkedin.com/in/abishake-shanker/">LinkedIn →</a>
+        <a href="https://github.com/Abishake-5" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>Built for CS 499 · Southern New Hampshire University</span>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
